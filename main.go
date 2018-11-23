@@ -27,6 +27,7 @@ func main() {
 	}
 
 	fmt.Println("Server is running at", port)
+	fmt.Println("Everything is good so far !")
 	// fmt.Println("Connexion : ", connection)
 
 	log.Fatal(server.ListenAndServe())
