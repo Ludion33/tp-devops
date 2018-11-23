@@ -10,6 +10,8 @@ import (
 
 func main() {
 
+	// connection := os.Getenv("DATABASE_URL")
+
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
@@ -25,6 +27,7 @@ func main() {
 	}
 
 	fmt.Println("Server is running at", port)
+	// fmt.Println("Connexion : ", connection)
 
 	log.Fatal(server.ListenAndServe())
 }
